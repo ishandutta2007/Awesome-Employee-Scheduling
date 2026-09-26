@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f0c1b" />
+    </linearGradient>
+
+    <!-- Card Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Pill Gradient 1 -->
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <!-- Pill Gradient 2 -->
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(1deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.6; }
+      }
+      @keyframes slideShift {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(15px); }
+        100% { transform: translateX(0px); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .bg-orb { animation: pulseGlow 6s ease-in-out infinite; }
+      .floating-card { animation: floatSlow 7s ease-in-out infinite; }
+      .shifting-pill { animation: slideShift 5s ease-in-out infinite; }
+      .flow-line { stroke-dasharray: 8 6; animation: dashMove 4s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="900" height="280" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Dynamic Background Orbs -->
+  <circle cx="150" cy="70" r="120" fill="#38bdf8" class="bg-orb" opacity="0.25" filter="url(#glow)" />
+  <circle cx="750" cy="210" r="140" fill="#818cf8" class="bg-orb" opacity="0.2" filter="url(#glow)" />
+  <circle cx="450" cy="260" r="100" fill="#c084fc" class="bg-orb" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Dynamic Background Grid / Schedule Flow (in background, opacity 0.25) -->
+  <g opacity="0.22">
+    <!-- Grid Lines -->
+    <line x1="50" y1="50" x2="850" y2="50" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="50" y1="120" x2="850" y2="120" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="50" y1="190" x2="850" y2="190" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4" />
+    
+    <line x1="150" y1="30" x2="150" y2="250" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="450" y1="30" x2="450" y2="250" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="750" y1="30" x2="750" y2="250" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4" />
+
+    <!-- Animated Flow Lines -->
+    <path d="M 80,210 Q 250,150 450,220 T 820,180" fill="none" stroke="#38bdf8" stroke-width="2" class="flow-line" />
+    <path d="M 100,70 Q 300,120 550,60 T 800,100" fill="none" stroke="#a78bfa" stroke-width="2" class="flow-line" />
+  </g>
+
+  <!-- Background Decorative Shift Cards & Pills (low opacity to stay behind text) -->
+  <g class="floating-card" opacity="0.35">
+    <rect x="620" y="35" width="220" height="65" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" />
+    <rect x="635" y="52" width="80" height="12" rx="6" fill="url(#pillGrad1)" class="shifting-pill" />
+    <rect x="725" y="52" width="95" height="12" rx="6" fill="#475569" />
+    <rect x="635" y="72" width="130" height="10" rx="5" fill="#64748b" />
+  </g>
+
+  <g class="floating-card" opacity="0.3" style="animation-delay: -3.5s;">
+    <rect x="60" y="175" width="200" height="60" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" />
+    <rect x="75" y="192" width="90" height="12" rx="6" fill="url(#pillGrad2)" />
+    <rect x="75" y="212" width="120" height="10" rx="5" fill="#64748b" />
+  </g>
+
+  <!-- Main Foreground Content (Title, Subtitle, Badges/Icons) -->
+  <g transform="translate(450, 135)" text-anchor="middle">
+    <!-- Icon / Calendar Symbol -->
+    <g transform="translate(0, -65)">
+      <rect x="-24" y="-24" width="48" height="48" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+      <path d="M-12 -8 H12 M-12 -1 H12 M-12 6 H6" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="8" cy="6" r="3" fill="#34d399" />
+    </g>
+
+    <!-- Main Title -->
+    <text y="15" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="0.5">
+      Awesome Employee Scheduling
+    </text>
+
+    <!-- Subtitle -->
+    <text y="48" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="500">
+      📅 Curated Ecosystem of SaaS Platforms, Self-Hosted Roster Engines &amp; WFM Tools
+    </text>
+
+    <!-- Feature Pills in Foreground -->
+    <g transform="translate(0, 78)">
+      <!-- Pill 1 -->
+      <g transform="translate(-230, 0)">
+        <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+        <text y="4" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Shift Rostering</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-75, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+        <text y="4" fill="#818cf8" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🤖 AI Optimization</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(85, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+        <text y="4" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">⏱️ Time &amp; Attendance</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(235, 0)">
+        <rect x="-60" y="-14" width="120" height="28" rx="14" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+        <text y="4" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🌐 Self-Hosted</text>
+      </g>
+    </g>
+  </g>
+</svg>

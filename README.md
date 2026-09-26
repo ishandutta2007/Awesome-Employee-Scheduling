@@ -1,1019 +1,228 @@
-# Awesome-Employee-Scheduling
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Employee Scheduling Banner" width="100%" />
+</p>
 
-# 📅 Top Employee Scheduling Platforms Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Employee Scheduling, Shift Scheduling, Workforce Rostering, Staff Scheduling, Time & Attendance, Shift Swapping & Workforce Management*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS/Hosted platforms** and **open-source GitHub projects** for **employee scheduling and workforce rostering**.
-
-
-
-Employee scheduling software helps organizations create and publish employee schedules, manage availability, handle time-off requests, fill open shifts, enable shift swaps, optimize staffing levels, track labor costs, manage multiple locations, and integrate scheduling with time tracking, payroll and HR systems.
-
-
-
-**Examples** include Deputy, When I Work, Homebase, Sling, Planday, Humanity, ZoomShift, Findmyshift, ScheduleAnywhere and Connecteam.
-
-
-
-**Open-source emphasis:** This repository places particular emphasis on **self-hosted employee scheduling and rostering software**, while also including open-source optimization engines, constraint solvers, HR systems, time-and-attendance platforms, calendar components and other building blocks that can be combined into a complete Deputy/When I Work/Homebase-style platform.
-
-
-
-A particularly important distinction is that an **open-source employee scheduling application** is different from an **open-source scheduling engine**. Projects such as Schichtplaner, Rota and Employee Shift Scheduler provide application-level scheduling functionality, while Timefold, OptaPlanner and OR-Tools primarily provide the optimization/constraint-solving layer needed to automatically construct schedules.
-
-
-
-Contributions welcome! Open a PR to add or update entries. Please distinguish between complete scheduling applications, HR/ERP platforms, optimization engines, time-and-attendance systems and supporting infrastructure.
-
-
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Employee-Scheduling/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Employee-Scheduling?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Employee-Scheduling/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Employee-Scheduling?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Employee-Scheduling/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Employee-Scheduling?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 📅 Awesome Employee Scheduling & Workforce Management
 
+> 🚀 **Curated Ecosystem of SaaS Platforms, Self-Hosted Roster Engines, Open-Source Workforce Management (WFM) Software & Scheduling UI Libraries**
 
-## Table of Contents
+Welcome to **Awesome Employee Scheduling**, the definitive technical guide and reference catalog for **staff rostering, shift scheduling, automated shift swapping, time and attendance tracking, and constraint-based workforce optimization**.
 
-
-
-* [SaaS/Hosted Platforms](#saashosted-platforms)
-
-* [Open-Source GitHub Projects](#open-source-github-projects)
-
-
-
-  * [Complete Employee Scheduling & Rostering Applications](#complete-employee-scheduling--rostering-applications)
-
-  * [HR/ERP Platforms with Scheduling Capabilities](#hrerpp-platforms-with-scheduling-capabilities)
-
-  * [Scheduling & Constraint Optimization Engines](#scheduling--constraint-optimization-engines)
-
-  * [Time & Attendance Building Blocks](#time--attendance-building-blocks)
-
-  * [Calendar & Scheduling UI Components](#calendar--scheduling-ui-components)
-
-  * [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-
-* [Commercial → Open-Source Capability Mapping](#commercial--open-source-capability-mapping)
-
-* [Framework for Building a Self-Hosted Employee Scheduling Platform](#framework-for-building-a-self-hosted-employee-scheduling-platform)
-
-* [How to Contribute](#how-to-contribute)
-
-* [Disclaimer](#disclaimer)
-
-
+Whether you are evaluating commercial **workforce management SaaS platforms** (like *Deputy*, *When I Work*, *Homebase*, *Sling*, *Connecteam*, or *Planday*), building a **self-hosted employee scheduling system**, or integrating **AI-driven constraint solvers** (*Timefold*, *Google OR-Tools*, *OptaPlanner*), this repository provides actionable mapping and open-source building blocks.
 
 ---
 
-
-
-## SaaS/Hosted Platforms
-
-
-
-* **[Deputy](https://www.deputy.com/)**
-
-  Employee scheduling and workforce management platform covering scheduling, timekeeping, compliance, HR, payroll and workforce communication, with automated/AI-assisted scheduling capabilities.
-
-
-
-* **[When I Work](https://wheniwork.com/)**
-
-  Employee scheduling and workforce management platform focused on shift scheduling, employee availability, time tracking, team communication and shift changes.
-
-
-
-* **[Homebase](https://www.joinhomebase.com/)**
-
-  SMB-focused employee scheduling platform combining schedule building, availability, time-off management, shift swaps, time tracking, labor-cost management and payroll-related workflows.
-
-
-
-* **[Sling](https://getsling.com/)**
-
-  Employee scheduling and workforce management software providing shift scheduling, availability, time-off management, shift trading, messaging and labor-cost tools.
-
-
-
-* **[Planday](https://www.planday.com/)**
-
-  Employee scheduling and workforce management platform with schedules, schedule templates, open shifts, employee availability, time tracking, payroll workflows and scheduling rules.
-
-
-
-* **[Humanity Schedule](https://tcpsoftware.com/products/humanity/)**
-
-  Workforce scheduling platform from TCP Software supporting automated scheduling, demand forecasting, employee availability, shift management, compliance rules, open shifts and self-service scheduling.
-
-
-
-* **[ZoomShift](https://www.zoomshift.com/)**
-
-  Employee scheduling software designed for hourly workforces, with schedule templates, availability, time-off requests, open shifts, shift swaps, notifications and time-clock functionality.
-
-
-
-* **[Findmyshift](https://www.findmyshift.com/)**
-
-  Online employee scheduling platform using a spreadsheet-style schedule editor with drag-and-drop scheduling, shift requests, labor-cost tracking, time and attendance and employee communication.
-
-
-
-* **[ScheduleAnywhere](https://www.scheduleanywhere.com/)**
-
-  Workforce scheduling platform focused on recurring shift schedules, employee availability, multi-department scheduling and self-scheduling.
-
-
-
-* **[Connecteam](https://connecteam.com/)**
-
-  Deskless-workforce management platform combining employee scheduling with time tracking, communication, task management, training and operational workflows.
-
-
-
-* **[7shifts](https://www.7shifts.com/)**
-
-  Restaurant-focused employee scheduling and workforce management platform covering scheduling, labor compliance, time tracking, team communication and labor-cost management.
-
-
-
-* **[Quinyx](https://www.quinyx.com/)**
-
-  Enterprise workforce management platform covering employee scheduling, demand forecasting, time and attendance, workforce optimization and labor planning.
-
-
-
-* **[Workforce.com](https://www.workforce.com/)**
-
-  Workforce management platform covering employee scheduling, time tracking, payroll, labor compliance, employee communication and workforce analytics.
-
-
-
-* **[Skello](https://www.skello.io/)**
-
-  Workforce management platform focused on employee schedules, time tracking, leave, payroll preparation and labor-rule compliance.
-
-
-
-* **[Shyft](https://www.myshyft.com/)**
-
-  Employee scheduling and workforce communication platform focused on shift management, shift swapping, open shifts and employee communication.
-
-
-
-* **[RotaCloud](https://rotacloud.com/)**
-
-  Online staff scheduling and rota-management software covering employee schedules, leave, availability, shift changes, time tracking and workforce communication.
-
-
-
-* **[Rotaready](https://rotaready.co.uk/)**
-
-  Workforce management platform for hospitality and other shift-based organizations covering scheduling, time and attendance, payroll and workforce planning.
-
-
-
-* **[Smartplan](https://smartplanapp.io/)**
-
-  Employee scheduling and shift-planning platform focused on staff rosters, availability, time-off, shift changes and workforce communication.
-
-
-
-* **[Papershift](https://www.papershift.com/)**
-
-  Cloud workforce management platform covering employee scheduling, time tracking, absence management and workforce administration.
-
-
-
-* **[Factorial](https://factorialhr.com/)**
-
-  HR platform with employee scheduling, time tracking, shift management, absence management and workforce administration capabilities.
-
-
-
-* **[BambooHR](https://www.bamboohr.com/)**
-
-  HR platform that provides employee-management and workforce administration capabilities that can complement dedicated scheduling systems.
-
-
-
-* **[TimeClock Plus](https://tcpsoftware.com/products/timeclock-plus/)**
-
-  Workforce management and time-and-attendance platform from TCP Software that complements scheduling and workforce planning.
-
-
+## 📑 Table of Contents
+
+- [📊 Market Overview & Industry Structure](#-market-overview--industry-structure)
+- [💼 Commercial SaaS Platforms](#-commercial-saas-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🖥️ Complete Employee Scheduling Applications](#️-complete-employee-scheduling-applications)
+  - [🏢 HR & ERP Platforms with Scheduling Capabilities](#-hr--erp-platforms-with-scheduling-capabilities)
+  - [🧠 Scheduling & Constraint Optimization Engines](#-scheduling--constraint-optimization-engines)
+  - [📅 Calendar & Scheduling UI Components](#-calendar--scheduling-ui-components)
+  - [⏱️ Time & Attendance Building Blocks](#️-time--attendance-building-blocks)
+  - [🛠️ Infrastructure, Analytics & Workflow Automation](#️-infrastructure-analytics--workflow-automation)
+- [🗺️ Commercial → Open-Source Capability Mapping](#️-commercial--open-source-capability-mapping)
+- [🏗️ Self-Hosted Workforce Platform Architecture](#️-self-hosted-workforce-platform-architecture)
+- [📈 Star History](#-star-history)
+- [💖 Support & Contributing](#-support--contributing)
 
 ---
 
+## 📊 Market Overview & Industry Structure
 
-
-## Open-Source GitHub Projects
-
-
-
-> **Open-source emphasis:** The projects below are intentionally broader than a simple list of scheduling libraries. Complete self-hosted scheduling applications are listed first, followed by HR/ERP systems, optimization engines and reusable components that can help build a full employee scheduling platform.
-
-
-
-### Complete Employee Scheduling & Rostering Applications
-
-
-
-* **[Schichtplaner](https://github.com/lennystepn-hue/schichtplaner)**
-
-  Self-hosted open-source shift-planning and workforce-management application with shift planning, employee management, availability/preferences, real-time collaboration, time tracking and schedule optimization.
-
-
-
-* **[Rota](https://github.com/jonathanhu237/rota)**
-
-  Open-source employee rostering application covering scheduling, availability, shift coverage, leave and attendance workflows with separate employee and administrator experiences.
-
-
-
-* **[Timeshift](https://github.com/ConaryLabs/Timeshift)**
-
-  Self-hostable scheduling platform designed for organizations with complex shift rules, including seniority-based overtime queues, vacation bidding, leave rules and 24/7 coverage requirements.
-
-
-
-* **[Employee Shift Scheduler](https://github.com/SirChri/employee-shift-scheduler)**
-
-  Open-source employee scheduling web application built with React, Spring Boot and PostgreSQL, with employee management, scheduling and recurring event functionality.
-
-
-
-* **[Shift Scheduler](https://github.com/robol/shift-scheduler)**
-
-  Open-source employee shift scheduler that calculates timetables according to employee preferences and organizational constraints using integer optimization.
-
-
-
-* **[Shift Scheduler](https://github.com/oasido/shift-scheduler)**
-
-  Open-source web application for employee shift scheduling and employee absence-request management, with employee and manager workflows and Docker deployment.
-
-
-
-* **[Employee Scheduling](https://github.com/martinmicunda/employee-scheduling)**
-
-  Open-source employee scheduling and management application designed to make employee scheduling easier, faster and mobile-friendly.
-
-
-
-* **[ShiftWizard](https://github.com/NaphtaliO/ShiftWizard)**
-
-  Free and open-source employee rostering system with separate employer and employee interfaces and self-hosted deployment.
-
-
-
-* **[Employee Scheduling System](https://github.com/mperry-dev/employee_scheduling_system)**
-
-  Open-source employee scheduling tool using OptaPlanner for automatic allocation of employees to shifts based on availability and scheduling constraints.
-
-
-
-* **[Scheduler](https://github.com/averude/Scheduler)**
-
-  Open-source employee rostering and work-scheduling web service with employee, department and shift administration and automated schedule generation.
-
-
-
-### HR/ERP Platforms with Scheduling Capabilities
-
-
-
-* **[ERPNext](https://github.com/frappe/erpnext)**
-
-  Open-source ERP platform with employee management, HR, attendance, leave, payroll and related workforce functionality that can be extended into a complete scheduling system.
-
-
-
-* **[Frappe HR](https://github.com/frappe/hrms)**
-
-  Open-source HR and workforce-management application for the Frappe framework with employee records, attendance, leave, payroll and HR workflows.
-
-
-
-* **[Odoo Community](https://github.com/odoo/odoo)**
-
-  Open-source business-management platform whose HR ecosystem can be extended with employee management, attendance, time off, planning and workforce scheduling functionality.
-
-
-
-* **[OrangeHRM](https://github.com/orangehrm/orangehrm)**
-
-  Open-source HR management platform covering employee administration, leave, attendance and workforce-management functionality that can serve as the employee-data foundation for a scheduling system.
-
-
-
-* **[TimeTrex Community Edition](https://github.com/timetrex/timetrex)**
-
-  Open-source workforce management platform covering employee management, time and attendance, scheduling, payroll and related workforce processes.
-
-
-
-### Scheduling & Constraint Optimization Engines
-
-
-
-* **[Timefold](https://github.com/TimefoldAI/timefold-solver)**
-
-  Open-source constraint-solving and optimization engine for planning problems including employee rostering and shift scheduling. Timefold's employee-scheduling examples support availability, skills, fairness and other scheduling constraints.
-
-
-
-* **[Timefold Quickstarts](https://github.com/TimefoldAI/timefold-quickstarts)**
-
-  Collection of practical optimization examples including employee shift scheduling, employee rostering, task assignment and other planning problems.
-
-
-
-* **[Google OR-Tools](https://github.com/google/or-tools)**
-
-  Open-source optimization suite supporting constraint programming, linear programming, mixed-integer programming and routing; particularly useful for building automated employee scheduling and rostering engines.
-
-
-
-* **[OptaPlanner](https://github.com/kiegroup/optaplanner)**
-
-  Open-source constraint-solving technology for planning and scheduling problems, including employee rostering and resource allocation.
-
-
-
-* **[OptaPlanner Quickstarts](https://github.com/kiegroup/optaplanner-quickstarts)**
-
-  Practical examples for constraint-solving applications, including employee scheduling where shifts are assigned according to employee availability and required skills.
-
-
-
-* **[Pyomo](https://github.com/Pyomo/pyomo)**
-
-  Open-source Python-based mathematical optimization modeling framework suitable for formulating workforce scheduling, rostering and labor-cost optimization problems.
-
-
-
-* **[PuLP](https://github.com/coin-or/pulp)**
-
-  Open-source Python linear-programming modeler useful for constructing employee assignment, shift coverage and workforce optimization models.
-
-
-
-* **[SCIP](https://github.com/scipopt/scip)**
-
-  Open-source optimization suite for mixed-integer programming and constraint programming that can be used to solve complex workforce scheduling problems.
-
-
-
-### Time & Attendance Building Blocks
-
-
-
-* **[Kimai](https://github.com/kimai/kimai)**
-
-  Open-source time-tracking platform that can provide the time and labor-tracking layer around an employee scheduling system.
-
-
-
-* **[TimeTrex](https://github.com/timetrex/timetrex)**
-
-  Open-source workforce management platform combining time and attendance, employee management, scheduling and payroll-related functionality.
-
-
-
-* **[ERPNext HRMS](https://github.com/frappe/hrms)**
-
-  Provides employee records, attendance, leave and payroll functionality that can be connected to a custom shift-scheduling engine.
-
-
-
-* **[Odoo](https://github.com/odoo/odoo)**
-
-  Provides employee, attendance, time-off and planning functionality that can serve as the workforce-management layer surrounding a custom scheduling engine.
-
-
-
-### Calendar & Scheduling UI Components
-
-
-
-* **[FullCalendar](https://github.com/fullcalendar/fullcalendar)**
-
-  Open-source JavaScript calendar library with powerful event visualization and scheduling interfaces, useful for building drag-and-drop employee roster interfaces.
-
-
-
-* **[React Big Calendar](https://github.com/jquense/react-big-calendar)**
-
-  React calendar component suitable for constructing custom employee scheduling, shift-management and resource-calendar interfaces.
-
-
-
-* **[Cal.com](https://github.com/calcom/cal.com)**
-
-  Open-source scheduling infrastructure and calendar platform that can provide reusable scheduling, availability and booking concepts for workforce applications.
-
-
-
-* **[rrule](https://github.com/jakubroztocil/rrule)**
-
-  Open-source recurrence-rule library useful for implementing recurring shifts, repeating schedules and complex calendar patterns.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-* **[Nextcloud Calendar](https://github.com/nextcloud/calendar)**
-
-  Open-source calendar application useful as a calendar and availability layer around a custom employee scheduling platform.
-
-
-
-* **[Nextcloud](https://github.com/nextcloud/server)**
-
-  Self-hosted collaboration platform that can provide identity, files, calendars, notifications and collaboration infrastructure around an employee scheduling application.
-
-
-
-* **[Mattermost](https://github.com/mattermost/mattermost)**
-
-  Open-source team collaboration platform suitable for employee scheduling notifications, team communication and shift-related discussions.
-
-
-
-* **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)**
-
-  Open-source communication platform that can provide messaging and workforce communication around a self-hosted scheduling system.
-
-
-
-* **[ntfy](https://github.com/binwiederhier/ntfy)**
-
-  Open-source notification service useful for sending schedule publication, shift-change and open-shift alerts.
-
-
-
-* **[Gotify](https://github.com/gotify/server)**
-
-  Self-hosted push-notification server suitable for employee schedule and shift notifications.
-
-
-
-* **[n8n](https://github.com/n8n-io/n8n)**
-
-  Open-source workflow automation platform useful for connecting scheduling with HR, payroll, email, messaging, attendance and notification systems.
-
-
-
-* **[Node-RED](https://github.com/node-red/node-red)**
-
-  Open-source flow-based automation platform useful for integrating employee scheduling with operational systems and notifications.
-
-
-
-* **[PostgreSQL](https://github.com/postgres/postgres)**
-
-  Open-source relational database suitable for storing employees, shifts, availability, leave, qualifications, locations and scheduling constraints.
-
-
-
-* **[Redis](https://github.com/redis/redis)**
-
-  In-memory data store useful for caching schedules, distributed locks, queues and real-time workforce scheduling workflows.
-
-
-
-* **[Grafana](https://github.com/grafana/grafana)**
-
-  Open-source observability and analytics platform useful for workforce dashboards, staffing metrics, overtime monitoring and schedule-performance reporting.
-
-
-
-* **[Metabase](https://github.com/metabase/metabase)**
-
-  Open-source business intelligence platform suitable for employee scheduling analytics, labor-cost reporting and workforce dashboards.
-
-
-
-* **[Apache Superset](https://github.com/apache/superset)**
-
-  Open-source data visualization and BI platform useful for analyzing staffing levels, labor costs, attendance and scheduling efficiency.
-
-
-
-* **[DuckDB](https://github.com/duckdb/duckdb)**
-
-  Open-source analytical database useful for local and embedded workforce analytics.
-
-
-
-* **[Polars](https://github.com/pola-rs/polars)**
-
-  High-performance open-source DataFrame library suitable for workforce scheduling analytics and large employee/shift datasets.
-
-
-
-* **[Pandas](https://github.com/pandas-dev/pandas)**
-
-  Open-source Python data-analysis library useful for workforce reporting, schedule analysis and preprocessing optimization inputs.
-
-
+> 💡 **Market Size & Dynamics:** The global **Employee Scheduling & Workforce Management (WFM) Software Market** is estimated at **$4.8 Billion (2025/2026)** and is projected to expand to **$9.2 Billion by 2030** at a CAGR of **~11.5%**. The market is **highly fragmented**, featuring specialized SMB hourly workforce tools (*Homebase*, *When I Work*, *Sling*), mid-market/enterprise suites (*Deputy*, *Planday*, *Connecteam*), vertical-specific rostering platforms (*7shifts* for restaurants, *Rotaready* for hospitality), and ERP-embedded HR platforms (*Odoo*, *BambooHR*, *ERPNext*), rather than a single winner-take-all monopoly.
 
 ---
 
+## 💼 Commercial SaaS Platforms
 
+The table below catalogs top commercial **Employee Scheduling & Workforce Management** platforms, sorted by **Company Valuation / Revenue / Size (Descending)**:
 
-## Commercial → Open-Source Capability Mapping
-
-
-
-| Commercial Platform  | Primary Scheduling Focus                              | Open-Source Equivalents / Building Blocks                        |
-
-| -------------------- | ----------------------------------------------------- | ---------------------------------------------------------------- |
-
-| **Deputy**           | Scheduling + time + attendance + workforce management | Frappe HR / ERPNext + Timefold / OR-Tools + FullCalendar + Kimai |
-
-| **When I Work**      | Scheduling + availability + team communication        | Schichtplaner + FullCalendar + Mattermost + ntfy                 |
-
-| **Homebase**         | SMB scheduling + time clock + communication           | ERPNext + Frappe HR + TimeTrex + FullCalendar                    |
-
-| **Sling**            | Scheduling + messaging + shift management             | Schichtplaner + Mattermost + FullCalendar + n8n                  |
-
-| **Planday**          | Rota planning + availability + time tracking          | ERPNext / Frappe HR + Timefold + FullCalendar                    |
-
-| **Humanity**         | Enterprise scheduling + optimization + compliance     | Timefold / OR-Tools + Frappe HR / ERPNext + FullCalendar         |
-
-| **ZoomShift**        | Simple scheduling + availability + shift swaps        | Schichtplaner + Shift Scheduler + FullCalendar                   |
-
-| **Findmyshift**      | Spreadsheet-style scheduling + labor tracking         | Shift Scheduler + FullCalendar + Kimai                           |
-
-| **ScheduleAnywhere** | Recurring schedules + multi-department rostering      | ERPNext / Frappe HR + Timefold + FullCalendar                    |
-
-| **Connecteam**       | Deskless workforce + scheduling + communication       | Frappe HR + Schichtplaner + Mattermost + n8n                     |
-
-| **7shifts**          | Restaurant scheduling + labor management              | Timefold / OR-Tools + ERPNext / Odoo + FullCalendar              |
-
-| **Quinyx**           | Enterprise WFM + forecasting + optimization           | Timefold / OR-Tools + ERPNext + Grafana                          |
-
-| **Workforce.com**    | Workforce management + labor optimization             | ERPNext + Timefold + OR-Tools + Grafana                          |
-
-| **Skello**           | Scheduling + time + leave + payroll workflows         | Frappe HR + Timefold + FullCalendar                              |
-
-| **Shyft**            | Shift swapping + employee communication               | Schichtplaner + Mattermost / Rocket.Chat + ntfy                  |
-
-| **RotaCloud**        | Rota scheduling + leave + time tracking               | Schichtplaner + Frappe HR + FullCalendar                         |
-
-| **Rotaready**        | Hospitality workforce management                      | ERPNext + Timefold + Kimai + Grafana                             |
-
-
-
-> **Important:** These mappings are **capability-oriented rather than feature-for-feature replacements**. Commercial products combine scheduling, mobile applications, notifications, payroll integrations, compliance rules, forecasting, analytics, customer support and hosted infrastructure. An equivalent self-hosted system will generally require several open-source components.
-
-
+| Platform | Company Valuation / Revenue / Size | Starting Pricing | Free Tier / Trial Limits | Primary Scheduling Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Toast (Sling)](https://getsling.com/)** | ~$15.0B+ Valuation / $3.8B+ Rev | $2.00 / user / month | Free Plan available (Shift scheduling & newsfeed for unlimited users) | Shift scheduling, availability, open shift management, messaging, labor cost controls. |
+| **[Xero (Planday)](https://www.planday.com/)** | ~$12.0B+ Valuation / $1.2B+ Rev | $3.30 (€3.00) / user / month | 30-day free trial (Full platform features included) | Rota planning, shift templates, open shifts, availability, time tracking, payroll sync. |
+| **[BambooHR](https://www.bamboohr.com/)** | ~$1.5B+ Valuation / $200M+ ARR | $5.25 / user / month | 7-day free trial (Full HR platform sandbox access) | Core HR data, employee directory, time-off requests, workforce shift administration. |
+| **[Deputy](https://www.deputy.com/)** | ~$1.1B Valuation / $100M+ ARR | $4.50 / user / month | 31-day free trial (No credit card required) | Auto-scheduling, demand forecasting, shift swapping, compliance, meal break tracking. |
+| **[Factorial](https://factorialhr.com/)** | ~$1.0B Valuation / $200M+ Raised | $6.60 (€6.00) / user / month | 14-day free trial (Up to 50 employees during trial) | Shift planning, attendance tracking, leave management, HR workflows. |
+| **[Connecteam](https://connecteam.com/)** | ~$800M Valuation / $160M Raised | $29.00 / month (Up to 30 users) | Free Small Business Plan (Free forever for up to 10 users) | Employee scheduling, shift dispatch, geo-fenced clock-in, team chat, task management. |
+| **[Homebase](https://www.joinhomebase.com/)** | ~$500M Valuation / $50M ARR | $20.00 / location / month | Basic Free Plan (Free forever for 1 location & up to 20 staff) | Drag-and-drop schedule building, availability, shift trades, time clock, labor cost tracking. |
+| **[Humanity & TimeClock Plus](https://tcpsoftware.com/products/humanity/)** | ~$400M Valuation / $100M+ Rev | $3.00 / user / month ($30 min/mo) | 30-day free trial (Full automated scheduling access) | AI-driven auto-scheduling, demand forecasting, compliance rules, self-service shift swaps. |
+| **[When I Work](https://wheniwork.com/)** | ~$200M Valuation / $50M+ ARR | $2.50 / user / month | 14-day free trial (Up to 75 employees during trial) | Hourly worker scheduling, employee availability, team chat, shift replacement alerts. |
+| **[7shifts](https://www.7shifts.com/)** | ~$180M Valuation / $30M ARR | $29.99 / location / month | Free Plan (Free forever for 1 location & up to 30 staff) | Restaurant employee scheduling, tip pooling, labor compliance, shift bidding. |
+| **[Quinyx](https://www.quinyx.com/)** | ~$150M Valuation / $100M+ Raised | $5.00 / user / month | 14-day free trial / interactive demo | Enterprise workforce management, AI demand forecasting, labor optimization. |
+| **[Workforce.com](https://www.workforce.com/)** | ~$120M Valuation / $50M ARR | $4.00 / user / month | 14-day free trial (Full administrative access) | Intelligent auto-rostering, fatigue monitoring, labor compliance, real-time variance. |
+| **[Skello](https://www.skello.io/)** | ~$60M Valuation / €40M Raised | $3.90 (€3.50) / user / month | 14-day free trial (Full roster management features) | Smart shift planning, absence tracking, collective agreement rules, payroll export. |
+| **[Papershift](https://www.papershift.com/)** | ~$25M Valuation / $10M ARR | $5.50 (€5.00) / user / month | 14-day free trial (Full roster & time tracking access) | Rota creator, working hour accounts, absence management, shift assignment. |
+| **[ZoomShift](https://www.zoomshift.com/)** | ~$15M Valuation / $5M ARR | $2.50 / user / month | 14-day free trial (Up to 100 staff members) | Hourly worker scheduling, shift swap requests, push notifications, web time clock. |
+| **[ScheduleAnywhere](https://www.scheduleanywhere.com/)** | ~$15M Valuation | $25.00 / month (Up to 25 staff) | 30-day free trial (Multi-department access) | Recurring shift schedules, multi-department rostering, skill tracking, self-scheduling. |
+| **[Shyft](https://www.myshyft.com/)** | ~$12M Valuation | $2.00 / user / month | 14-day free trial (Shift swapping & chat access) | Peer-to-peer shift swapping, shift marketplace, team messaging, open shift claiming. |
+| **[Findmyshift](https://www.findmyshift.com/)** | ~$10M Valuation / $3M ARR | $25.00 / schedule / month | Free Plan (Free forever for up to 5 staff & 1 manager) | Spreadsheet-style schedule builder, drag-and-drop shifts, labor cost calculation. |
+| **[RotaCloud](https://rotacloud.com/)** | ~$10M Valuation / $3M ARR | $2.60 (£2.00) / user / month | 14-day free trial (Unlimited employees) | Rota management, leave management, employee availability, shift pattern templates. |
+| **[Rotaready](https://rotaready.co.uk/)** | ~$8M Valuation | $3.30 (£2.50) / user / month | 14-day free trial (Hospitality setup) | Hospitality workforce scheduling, automated shift allocation, wage monitoring. |
+| **[Smartplan](https://smartplanapp.io/)** | ~$5M Valuation | $32.00 (€29.00) / month | 14-day free trial (Up to 15 employees included) | Online shift planner, shift trading, time tracking, mobile app notifications. |
+| **[TimeTrex Cloud](https://www.timetrex.com/)** | ~$5M Valuation | $3.00 / user / month | Community Edition is 100% Free Self-Hosted | Automated shift scheduling, job costing, time clocking, integrated payroll. |
 
 ---
 
+## ⚡ Open-Source GitHub Projects
 
+Below are open-source repositories and components for building self-hosted employee scheduling platforms, sorted within each category by **GitHub Stars (Descending)**.
 
-## Framework for Building a Self-Hosted Employee Scheduling Platform
+### 🖥️ Complete Employee Scheduling Applications
 
+- **[Staffjoy V2](https://github.com/Staffjoy/v2)** [![Stars](https://img.shields.io/github/stars/Staffjoy/v2?style=social&color=white)](https://github.com/Staffjoy/v2/stargazers) — Microservice-based workforce management app designed for small business shift scheduling and staff administration.
+- **[OpenSkedge](https://github.com/OfficeStack/OpenSkedge)** [![Stars](https://img.shields.io/github/stars/OfficeStack/OpenSkedge?style=social&color=white)](https://github.com/OfficeStack/OpenSkedge/stargazers) — Flexible web-based employee scheduling application built for companies and organizations with fluid shift structures.
+- **[Employee Shift Scheduler](https://github.com/SirChri/employee-shift-scheduler)** [![Stars](https://img.shields.io/github/stars/SirChri/employee-shift-scheduler?style=social&color=white)](https://github.com/SirChri/employee-shift-scheduler/stargazers) — Full-stack employee shift scheduler built with React, Java Spring Boot, and PostgreSQL.
+- **[Employee Scheduling](https://github.com/martinmicunda/employee-scheduling)** [![Stars](https://img.shields.io/github/stars/martinmicunda/employee-scheduling?style=social&color=white)](https://github.com/martinmicunda/employee-scheduling/stargazers) — Mobile-friendly employee scheduling and staff management web application.
+- **[Shift Scheduler (oasido)](https://github.com/oasido/shift-scheduler)** [![Stars](https://img.shields.io/github/stars/oasido/shift-scheduler?style=social&color=white)](https://github.com/oasido/shift-scheduler/stargazers) — Web application for employee shift scheduling and absence-request management with Docker containerization.
+- **[Scheduler](https://github.com/averude/Scheduler)** [![Stars](https://img.shields.io/github/stars/averude/Scheduler?style=social&color=white)](https://github.com/averude/Scheduler/stargazers) — Open-source employee rostering and work-scheduling web service supporting automated timetable generation.
+- **[Schichtplaner](https://github.com/lennystepn-hue/schichtplaner)** [![Stars](https://img.shields.io/github/stars/lennystepn-hue/schichtplaner?style=social&color=white)](https://github.com/lennystepn-hue/schichtplaner/stargazers) — Self-hosted shift-planning tool with availability preferences, schedule optimization, and real-time collaboration.
+- **[Shift Scheduler (robol)](https://github.com/robol/shift-scheduler)** [![Stars](https://img.shields.io/github/stars/robol/shift-scheduler?style=social&color=white)](https://github.com/robol/shift-scheduler/stargazers) — Employee shift scheduler using integer optimization to balance worker preferences with organizational rules.
+- **[ShiftWizard](https://github.com/NaphtaliO/ShiftWizard)** [![Stars](https://img.shields.io/github/stars/NaphtaliO/ShiftWizard?style=social&color=white)](https://github.com/NaphtaliO/ShiftWizard/stargazers) — Self-hosted employee rostering system with separate employer and employee portals.
+- **[Employee Scheduling System](https://github.com/mperry-dev/employee_scheduling_system)** [![Stars](https://img.shields.io/github/stars/mperry-dev/employee_scheduling_system?style=social&color=white)](https://github.com/mperry-dev/employee_scheduling_system/stargazers) — Automated employee assignment tool using OptaPlanner for shift allocation and constraint matching.
 
+---
 
-A practical open-source architecture for building a **Deputy / When I Work / Homebase / Planday-style employee scheduling platform** can be assembled from the following components:
+### 🏢 HR & ERP Platforms with Scheduling Capabilities
 
+- **[Odoo Community](https://github.com/odoo/odoo)** [![Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers) — Open-source ERP suite featuring modular HR, employee management, planning, time-off, and attendance capabilities.
+- **[ERPNext](https://github.com/frappe/erpnext)** [![Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) — Comprehensive ERP platform with employee records, shift management, attendance tracking, leave, and payroll.
+- **[Frappe HR](https://github.com/frappe/hrms)** [![Stars](https://img.shields.io/github/stars/frappe/hrms?style=social&color=white)](https://github.com/frappe/hrms/stargazers) — Dedicated open-source HR and workforce management system built on the Frappe framework.
+- **[OrangeHRM](https://github.com/orangehrm/orangehrm)** [![Stars](https://img.shields.io/github/stars/orangehrm/orangehrm?style=social&color=white)](https://github.com/orangehrm/orangehrm/stargazers) — Popular open-source HR platform covering employee directory, leave management, attendance, and performance.
+- **[TimeTrex Community](https://github.com/timetrex/timetrex)** [![Stars](https://img.shields.io/github/stars/timetrex/timetrex?style=social&color=white)](https://github.com/timetrex/timetrex/stargazers) — Self-hosted workforce management system covering employee scheduling, time clocking, and payroll.
 
+---
 
-| Layer                     | Open-Source Technologies                        |
+### 🧠 Scheduling & Constraint Optimization Engines
 
-| ------------------------- | ----------------------------------------------- |
+- **[Google OR-Tools](https://github.com/google/or-tools)** [![Stars](https://img.shields.io/github/stars/google/or-tools?style=social&color=white)](https://github.com/google/or-tools/stargazers) — Fast optimization engine supporting mixed-integer programming and constraint solver models for automated workforce scheduling.
+- **[Pyomo](https://github.com/Pyomo/pyomo)** [![Stars](https://img.shields.io/github/stars/Pyomo/pyomo?style=social&color=white)](https://github.com/Pyomo/pyomo/stargazers) — Python-based mathematical modeling framework for formulating complex workforce rostering and labor-cost optimization problems.
+- **[PuLP](https://github.com/coin-or/pulp)** [![Stars](https://img.shields.io/github/stars/coin-or/pulp?style=social&color=white)](https://github.com/coin-or/pulp/stargazers) — Linear programming modeler in Python for solving shift coverage, employee assignment, and staffing models.
+- **[Timefold Solver](https://github.com/TimefoldAI/timefold-solver)** [![Stars](https://img.shields.io/github/stars/TimefoldAI/timefold-solver?style=social&color=white)](https://github.com/TimefoldAI/timefold-solver/stargazers) — Open-source AI constraint solver for planning and shift scheduling with complex availability and fairness rules.
+- **[SCIP](https://github.com/scipopt/scip)** [![Stars](https://img.shields.io/github/stars/scipopt/scip?style=social&color=white)](https://github.com/scipopt/scip/stargazers) — High-performance solver suite for mixed-integer programming and constraint integer programming.
+- **[Timefold Quickstarts](https://github.com/TimefoldAI/timefold-quickstarts)** [![Stars](https://img.shields.io/github/stars/TimefoldAI/timefold-quickstarts?style=social&color=white)](https://github.com/TimefoldAI/timefold-quickstarts/stargazers) — Production-ready optimization templates including employee rostering and shift allocation.
+- **[OptaPlanner](https://github.com/kiegroup/optaplanner)** [![Stars](https://img.shields.io/github/stars/kiegroup/optaplanner?style=social&color=white)](https://github.com/kiegroup/optaplanner/stargazers) — Java constraint-solving engine for workforce planning, roster generation, and resource management.
+- **[OptaPlanner Quickstarts](https://github.com/kiegroup/optaplanner-quickstarts)** [![Stars](https://img.shields.io/github/stars/kiegroup/optaplanner-quickstarts?style=social&color=white)](https://github.com/kiegroup/optaplanner-quickstarts/stargazers) — Practical code samples for shift allocation based on employee skills and availability.
+- **[pyworkforce](https://github.com/rodrigo-arenas/pyworkforce)** [![Stars](https://img.shields.io/github/stars/rodrigo-arenas/pyworkforce?style=social&color=white)](https://github.com/rodrigo-arenas/pyworkforce/stargazers) — Python tools for workforce management, queuing, scheduling, Erlang calculations, and rostering optimization.
 
-| Employee / HR             | Frappe HR · ERPNext · Odoo · OrangeHRM          |
+---
 
-| Scheduling Application    | Schichtplaner · Rota · Employee Shift Scheduler |
+### 📅 Calendar & Scheduling UI Components
 
-| Scheduling UI             | FullCalendar · React Big Calendar               |
+- **[Cal.com](https://github.com/calcom/cal.com)** [![Stars](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers) — Open-source scheduling infrastructure and booking platform.
+- **[FullCalendar](https://github.com/fullcalendar/fullcalendar)** [![Stars](https://img.shields.io/github/stars/fullcalendar/fullcalendar?style=social&color=white)](https://github.com/fullcalendar/fullcalendar/stargazers) — Popular JavaScript calendar library for building interactive drag-and-drop employee shift timelines.
+- **[TOAST UI Calendar](https://github.com/nhn/tui.calendar)** [![Stars](https://img.shields.io/github/stars/nhn/tui.calendar?style=social&color=white)](https://github.com/nhn/tui.calendar/stargazers) — Full-featured JavaScript grid calendar component for schedule visualization.
+- **[React Big Calendar](https://github.com/jquense/react-big-calendar)** [![Stars](https://img.shields.io/github/stars/jquense/react-big-calendar?style=social&color=white)](https://github.com/jquense/react-big-calendar/stargazers) — Flexbox-based React event calendar for shift roster management.
+- **[rrule](https://github.com/jakubroztocil/rrule)** [![Stars](https://img.shields.io/github/stars/jakubroztocil/rrule?style=social&color=white)](https://github.com/jakubroztocil/rrule/stargazers) — Recurrence-rule library for working with recurring shifts and schedule patterns in JS/TS.
+- **[Schedule-X](https://github.com/schedule-x/schedule-x)** [![Stars](https://img.shields.io/github/stars/schedule-x/schedule-x?style=social&color=white)](https://github.com/schedule-x/schedule-x/stargazers) — Modern, accessible JavaScript event calendar and shift scheduler component.
 
-| Automatic Scheduling      | Timefold · OR-Tools · OptaPlanner               |
+---
 
-| Mathematical Optimization | Pyomo · PuLP · SCIP                             |
+### ⏱️ Time & Attendance Building Blocks
 
-| Employee Availability     | Frappe HR · ERPNext · Custom PostgreSQL models  |
+- **[Kimai](https://github.com/kimai/kimai)** [![Stars](https://img.shields.io/github/stars/kimai/kimai?style=social&color=white)](https://github.com/kimai/kimai/stargazers) — Open-source time tracking application ideal for logging worked hours alongside scheduling software.
+- **[Nextcloud Calendar](https://github.com/nextcloud/calendar)** [![Stars](https://img.shields.io/github/stars/nextcloud/calendar?style=social&color=white)](https://github.com/nextcloud/calendar/stargazers) — CalDAV calendar app providing employee availability sync and schedule sharing.
 
-| Shift Swapping            | Custom workflow + FullCalendar                  |
+---
 
-| Open Shifts               | Custom scheduling workflow + notifications      |
+### 🛠️ Infrastructure, Analytics & Workflow Automation
 
-| Skills Matching           | Timefold · OR-Tools                             |
+- **[n8n](https://github.com/n8n-io/n8n)** [![Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) — Workflow automation platform for connecting shift schedules with payroll, messaging, and HR software.
+- **[Grafana](https://github.com/grafana/grafana)** [![Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) — Observability platform for monitoring workforce metrics, staffing coverage, and labor cost trends.
+- **[Redis](https://github.com/redis/redis)** [![Stars](https://img.shields.io/github/stars/redis/redis?style=social&color=white)](https://github.com/redis/redis/stargazers) — In-memory data store for real-time schedule caching, queues, and distributed locks.
+- **[Apache Superset](https://github.com/apache/superset)** [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) — Data visualization platform for business intelligence dashboards on employee schedules.
+- **[Pandas](https://github.com/pandas-dev/pandas)** [![Stars](https://img.shields.io/github/stars/pandas-dev/pandas?style=social&color=white)](https://github.com/pandas-dev/pandas/stargazers) — Data analysis library for processing roster data and optimizing shift assignments.
+- **[Metabase](https://github.com/metabase/metabase)** [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) — BI dashboard server for employee shift analytics and labor utilization tracking.
+- **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** [![Stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers) — Open-source chat platform for shift swapping requests and team communications.
+- **[DuckDB](https://github.com/duckdb/duckdb)** [![Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers) — High-performance analytical SQL database for local workforce analytics.
+- **[Polars](https://github.com/pola-rs/polars)** [![Stars](https://img.shields.io/github/stars/pola-rs/polars?style=social&color=white)](https://github.com/pola-rs/polars/stargazers) — Fast DataFrame library for analyzing high-volume shift schedules and timecard records.
+- **[Mattermost](https://github.com/mattermost/mattermost)** [![Stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers) — Team collaboration platform for workforce messaging and shift notifications.
+- **[Nextcloud Server](https://github.com/nextcloud/server)** [![Stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers) — Self-hosted collaboration platform providing user identity and document storage.
+- **[ntfy](https://github.com/binwiederhier/ntfy)** [![Stars](https://img.shields.io/github/stars/binwiederhier/ntfy?style=social&color=white)](https://github.com/binwiederhier/ntfy/stargazers) — HTTP-based pub-sub push notification service for roster updates and open-shift alerts.
+- **[Node-RED](https://github.com/node-red/node-red)** [![Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) — Flow-based integration tool for connecting clock-in hardware and scheduling APIs.
+- **[PostgreSQL](https://github.com/postgres/postgres)** [![Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers) — Relational database for storing employee profiles, availability, shift patterns, and audit logs.
+- **[Gotify](https://github.com/gotify/server)** [![Stars](https://img.shields.io/github/stars/gotify/server?style=social&color=white)](https://github.com/gotify/server/stargazers) — Self-hosted push notification server for sending schedule alerts to mobile devices.
 
-| Labor Constraints         | Timefold · OR-Tools · OptaPlanner               |
+---
 
-| Time & Attendance         | TimeTrex · Kimai · ERPNext                      |
+## 🗺️ Commercial → Open-Source Capability Mapping
 
-| Leave Management          | Frappe HR · ERPNext · Odoo                      |
+| Commercial SaaS Platform | Key Proprietary Features | Equivalent Open-Source Architecture / Stack |
+| :--- | :--- | :--- |
+| **Deputy** | Auto-scheduling, compliance, time clock, messaging | Frappe HR / ERPNext + Timefold / OR-Tools + FullCalendar + Kimai |
+| **When I Work** | Hourly shift rostering, availability, team chat | Staffjoy V2 / OpenSkedge + FullCalendar + Mattermost + ntfy |
+| **Homebase** | SMB schedule building, shift trades, time clock | ERPNext + Frappe HR + TimeTrex + FullCalendar |
+| **Sling** | Shift scheduling, shift marketplace, newsfeed | OpenSkedge + Mattermost + FullCalendar + n8n |
+| **Planday** | Shift templates, open shifts, availability sync | ERPNext / Frappe HR + Timefold + FullCalendar |
+| **Humanity** | AI shift allocation, labor forecasting, compliance | Timefold / OR-Tools + Frappe HR / ERPNext + FullCalendar |
+| **ZoomShift** | Simple rostering, shift swaps, web time clock | Employee Shift Scheduler + FullCalendar + Kimai |
+| **Findmyshift** | Spreadsheet schedule editor, labor cost tracking | Shift Scheduler + FullCalendar + Kimai |
+| **Connecteam** | Shift dispatch, deskless workforce chat, tasks | Frappe HR + OpenSkedge + Mattermost + n8n |
+| **7shifts** | Restaurant rostering, tip pooling, compliance | Timefold / OR-Tools + ERPNext / Odoo + FullCalendar |
 
-| Payroll                   | ERPNext · Odoo                                  |
+---
 
-| Notifications             | ntfy · Gotify                                   |
-
-| Team Communication        | Mattermost · Rocket.Chat                        |
-
-| Calendar                  | FullCalendar · Nextcloud Calendar               |
-
-| Workflow Automation       | n8n · Node-RED                                  |
-
-| Database                  | PostgreSQL                                      |
-
-| Cache / Queues            | Redis                                           |
-
-| Analytics                 | DuckDB · Polars · Pandas                        |
-
-| BI                        | Grafana · Metabase · Apache Superset            |
-
-| API                       | FastAPI · Django · Spring Boot                  |
-
-| Authentication            | Keycloak                                        |
-
-| Deployment                | Docker · Kubernetes                             |
-
-
-
-### Recommended Architecture
-
-
+## 🏗️ Self-Hosted Workforce Platform Architecture
 
 ```text
-
-                    ┌───────────────────────────────┐
-
-                    │       Employee Web / App      │
-
-                    │ Schedule · Availability       │
-
-                    │ Leave · Swaps · Open Shifts   │
-
-                    └───────────────┬───────────────┘
-
-                                    │
-
-                                    ▼
-
-                    ┌───────────────────────────────┐
-
-                    │       Scheduling API          │
-
-                    │ Employees · Shifts · Rules    │
-
-                    │ Locations · Skills · Leave    │
-
-                    └───────────────┬───────────────┘
-
-                                    │
-
-                   ┌────────────────┴────────────────┐
-
-                   │                                 │
-
-                   ▼                                 ▼
-
-        ┌────────────────────┐             ┌────────────────────┐
-
-        │ Scheduling Engine  │             │ Employee / HR Data │
-
-        │ Timefold / OR-Tools│             │ Frappe HR / ERPNext│
-
-        │ OptaPlanner        │             │ Odoo / OrangeHRM   │
-
-        └──────────┬─────────┘             └──────────┬─────────┘
-
-                   │                                  │
-
-                   └────────────────┬─────────────────┘
-
-                                    ▼
-
-                    ┌───────────────────────────────┐
-
-                    │          PostgreSQL           │
-
-                    │ Employees · Shifts · Rules    │
-
-                    │ Availability · Attendance     │
-
-                    └───────────────┬───────────────┘
-
-                                    │
-
-              ┌─────────────────────┼─────────────────────┐
-
-              ▼                     ▼                     ▼
-
-       ┌────────────┐        ┌────────────┐       ┌────────────┐
-
-       │ Attendance │        │ Notifications│      │ Analytics  │
-
-       │ TimeTrex   │        │ ntfy/Gotify │       │ Grafana    │
-
-       │ Kimai      │        │ Mattermost  │       │ Metabase   │
-
-       └────────────┘        └────────────┘       └────────────┘
-
+┌─────────────────────────────────────────────────────────┐
+│              Employee Web App / Mobile UI               │
+│  View Shift Roster · Submit Availability · Trade Shifts │
+└────────────────────────────┬────────────────────────────┘
+                             │
+                             ▼
+┌─────────────────────────────────────────────────────────┐
+│                    Scheduling API                       │
+│  Shift Rules · Employee Skills · Overtime Constraints  │
+└──────────────┬───────────────────────────┬──────────────┘
+               │                           │
+               ▼                           ▼
+┌────────────────────────────┐  ┌─────────────────────────┐
+│  AI Optimization Engine    │  │   Employee / HR Backend │
+│  Timefold / Google OR-Tools│  │   Frappe HR / ERPNext   │
+└──────────────┬─────────────┘  └──────────┬──────────────┘
+               │                           │
+               └─────────────┬─────────────┘
+                             ▼
+┌─────────────────────────────────────────────────────────┐
+│                   PostgreSQL Database                   │
+│   Employees · Shifts · Availability · Attendance Logs   │
+└──────────────┬─────────────┬─────────────┬──────────────┘
+               │             │             │
+               ▼             ▼             ▼
+┌──────────────────┐ ┌───────────────┐ ┌──────────────────┐
+│ Attendance Clock │ │ Notifications │ │ Analytics / BI   │
+│ Kimai / TimeTrex │ │ ntfy / Gotify │ │ Grafana / DuckDB │
+└──────────────────┘ └───────────────┘ └──────────────────┘
 ```
 
+---
 
+## 📈 Star History
 
-### Core Scheduling Workflow
-
-
-
-```text
-
-Employee Data
-
-      ↓
-
-Availability & Time-Off
-
-      ↓
-
-Required Staffing Levels
-
-      ↓
-
-Skills / Qualifications
-
-      ↓
-
-Labor Rules & Constraints
-
-      ↓
-
-Demand Forecast
-
-      ↓
-
-Constraint Optimization
-
-      ↓
-
-Draft Schedule
-
-      ↓
-
-Manager Review
-
-      ↓
-
-Publish Schedule
-
-      ↓
-
-Employee Notifications
-
-      ↓
-
-Shift Swaps / Open Shifts
-
-      ↓
-
-Time & Attendance
-
-      ↓
-
-Payroll
-
-      ↓
-
-Workforce Analytics
-
-```
-
-
-
-The core scheduling problem can be modeled as:
-
-
-
-```text
-
-Employees
-
-    +
-
-Shifts
-
-    +
-
-Availability
-
-    +
-
-Skills
-
-    +
-
-Coverage Requirements
-
-    +
-
-Labor Rules
-
-    +
-
-Employee Preferences
-
-    +
-
-Fairness Constraints
-
-    +
-
-Labor Cost
-
-        ↓
-
-Constraint Solver
-
-        ↓
-
-Optimized Employee Roster
-
-```
-
-
-
-The most important open-source distinction is that **Timefold / OR-Tools / OptaPlanner solve the optimization problem**, while systems such as **Schichtplaner, Rota, ERPNext/Frappe HR and TimeTrex provide much more of the surrounding application functionality**.
-
-
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Employee-Scheduling&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Employee-Scheduling&type=date&legend=top-left)
 
 ---
 
+## 💖 Support & Contributing
 
+Thank you for exploring **Awesome Employee Scheduling**! If you find this curated ecosystem list helpful for your organization, research, or development projects:
 
-## Open-Source Capability Matrix
-
-
-
-| Capability                | Commercial Platforms | Strong Open-Source Options             |
-
-| ------------------------- | -------------------- | -------------------------------------- |
-
-| Employee Management       | ✓                    | Frappe HR · ERPNext · Odoo · OrangeHRM |
-
-| Shift Creation            | ✓                    | Schichtplaner · Rota · FullCalendar    |
-
-| Drag-and-Drop Scheduling  | ✓                    | FullCalendar · React Big Calendar      |
-
-| Schedule Templates        | ✓                    | Custom + FullCalendar · ERPNext        |
-
-| Employee Availability     | ✓                    | Frappe HR · ERPNext · Custom           |
-
-| Automatic Scheduling      | ✓                    | Timefold · OR-Tools · OptaPlanner      |
-
-| Constraint Scheduling     | ✓                    | Timefold · OR-Tools · Pyomo · SCIP     |
-
-| Skills Matching           | ✓                    | Timefold · OR-Tools                    |
-
-| Shift Swapping            | ✓                    | Custom workflow + scheduler            |
-
-| Open Shifts               | ✓                    | Custom + notifications                 |
-
-| Employee Preferences      | ✓                    | Timefold · custom application          |
-
-| Fairness Optimization     | ✓                    | Timefold · OR-Tools                    |
-
-| Coverage Optimization     | ✓                    | Timefold · OR-Tools                    |
-
-| Labor Cost Optimization   | ✓                    | OR-Tools · Timefold · Pyomo            |
-
-| Recurring Shifts          | ✓                    | FullCalendar · rrule · Schichtplaner   |
-
-| Multi-Location Scheduling | ✓                    | ERPNext · Odoo + custom                |
-
-| Leave Management          | ✓                    | Frappe HR · ERPNext · Odoo             |
-
-| Time & Attendance         | ✓                    | TimeTrex · Kimai · ERPNext             |
-
-| Payroll                   | ✓                    | ERPNext · Odoo                         |
-
-| Team Messaging            | ✓                    | Mattermost · Rocket.Chat               |
-
-| Push Notifications        | ✓                    | ntfy · Gotify                          |
-
-| Calendar Integration      | ✓                    | Nextcloud Calendar · Cal.com           |
-
-| Workflow Automation       | ✓                    | n8n · Node-RED                         |
-
-| Workforce Analytics       | ✓                    | Grafana · Metabase · Superset          |
-
-| Database                  | ✓                    | PostgreSQL                             |
-
-| API                       | ✓                    | FastAPI · Django · Spring Boot         |
-
-| Authentication            | ✓                    | Keycloak                               |
-
-
-
----
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repository.
-
-
-
-2. Add or edit entries in `README.md` following the existing format.
-
-
-
-3. Include the official website or GitHub repository.
-
-
-
-4. Clearly identify whether the project is **SaaS/Hosted**, **Open Source**, **Scheduling Application**, **HR/ERP**, **Optimization Engine**, **Time & Attendance**, or a **Supporting Building Block**.
-
-
-
-5. Prefer actively maintained open-source repositories.
-
-
-
-6. Include the project's license when known.
-
-
-
-7. Distinguish complete employee scheduling applications from scheduling libraries and optimization engines.
-
-
-
-8. Add new self-hosted employee scheduling and rostering applications.
-
-
-
-9. Add new employee scheduling algorithms and constraint solvers.
-
-
-
-10. Add projects supporting availability, shift swaps, open shifts and employee preferences.
-
-
-
-11. Add integrations with HR, payroll, attendance and workforce-management systems.
-
-
-
-12. Submit a pull request with a short explanation of the addition or update.
-
-
-
-⭐ **Star the repository if you find it useful!**
-
-
-
----
-
-
-
-## Disclaimer
-
-
-
-* This repository is a **curated directory**, not a ranking or endorsement of any particular product.
-
-* Commercial products and features change frequently; verify current capabilities, pricing, licensing and integrations with the vendor.
-
-* Open-source projects vary substantially in maturity, maintenance activity, documentation, scalability and production readiness.
-
-* An optimization engine such as **Timefold, OR-Tools or OptaPlanner** is not by itself a complete employee scheduling application.
-
-* A complete self-hosted alternative to a commercial workforce-management platform may require several independent open-source components.
-
-* Scheduling implementations should be reviewed for applicable labor laws, collective agreements, overtime rules, rest periods, data protection and organizational policies.
-
-* Always review the license of each open-source project before using it commercially.
-
-* Project links and availability may change over time.
-
-
-
----
-
-
-
-**Made for developers, HR teams, operations teams & builders exploring the open-source workforce-management ecosystem.**
-
-**Let's make employee scheduling more programmable, transparent and self-hostable.**
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork and share** with fellow workforce planners, HR engineers, and developers.
+- 🤝 **Contributions are welcome!** Feel free to submit a Pull Request or open an Issue to add new open-source rostering tools or SaaS platforms.
+- ☕ **Support the maintainer**: If you would like to support ongoing updates and maintenance, consider sponsoring via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
