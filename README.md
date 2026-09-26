@@ -80,7 +80,7 @@ The table below catalogs top commercial **Employee Scheduling & Workforce Manage
 
 ## ⚡ Open-Source GitHub Projects
 
-Below are open-source repositories and components for building self-hosted employee scheduling platforms, sorted within each category by **GitHub Stars (Descending)**.
+Below are open-source repositories and components for building self-hosted employee scheduling platforms, sorted within each category by **GitHub_Stars (Descending)**.
 
 ### 🖥️ Complete Employee Scheduling Applications
 
